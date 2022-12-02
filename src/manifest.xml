@@ -1,0 +1,7 @@
+<manifest projecttype="SUITEAPP">
+  <publisherid>com.versapay</publisherid>
+  <projectid>suiteappv2</projectid>
+  <projectname>suite-app-v2</projectname>
+  <projectversion>1.0.0</projectversion>
+  <frameworkversion>1.0</frameworkversion>
+</manifest>
