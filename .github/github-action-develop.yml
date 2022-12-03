@@ -1,0 +1,28 @@
+name: Autodeployment from DEV to QA
+run-name: ${{ github.actor }} is deploying to QA 🚀
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'devlop'
+
+jobs:
+  if_merged: 
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: 'temurin'
+      - run: npm install -g --acceptSuiteCloudSDKLicense @oracle/suitecloud-cli
+      - run: npm install --save-dev @oracle/suitecloud-unit-testing jest
+      - run: suitecloud account:savetoken --account TSTDRV2453781 --authid DEV-CLI --tokenid a7b366190abf712ed9aae0e6c4f97f434deb251d651905a1a80af6888ff82b9a --tokensecret 855f7ebb27dfb61f383fca04bbc6b49addd2e8dc789ef2b49c7de70a9a29200b --url tstdrv2453781.app.netsuite.com
+      - run: suitecloud project:deploy
