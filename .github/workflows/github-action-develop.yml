@@ -5,7 +5,7 @@ on:
     types:
       - closed
     branches:
-      - 'devlop'
+      - 'develop'
 
 jobs:
   if_merged: 
