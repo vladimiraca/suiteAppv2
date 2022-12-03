@@ -21,7 +21,7 @@ function(dialog) {
     function pageInit(scriptContext) {
         dialog.alert({
             title: 'Hello Customer',
-            message: 'This is message was modified'
+            message: 'The githubaction will be triggered'
         });
     }
 
