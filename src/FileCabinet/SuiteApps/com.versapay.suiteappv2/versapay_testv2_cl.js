@@ -21,7 +21,7 @@ function(dialog) {
     function pageInit(scriptContext) {
         dialog.alert({
             title: 'Hello Customer',
-            message: 'This is just a test'
+            message: 'This is message was modified'
         });
     }
 
