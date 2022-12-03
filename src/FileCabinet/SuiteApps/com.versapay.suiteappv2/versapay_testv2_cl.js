@@ -21,7 +21,7 @@ function(dialog) {
     function pageInit(scriptContext) {
         dialog.alert({
             title: 'Hello Customer',
-            message: 'The githubaction will be triggered'
+            message: 'The last test for githubaction'
         });
     }
 
