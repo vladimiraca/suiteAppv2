@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_versapay_formtest_sl">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Versapay Formtest SL</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteApps/com.versapay.suiteappv2/versapay_formtestv_sl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_versapay_formtest_sl">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>TESTING</status>
+      <title>Versapay Formtest SL</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>
