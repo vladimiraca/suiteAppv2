@@ -20,8 +20,8 @@ function(dialog) {
      */
     function pageInit(scriptContext) {
         dialog.alert({
-            title: 'This is a title',
-            message: 'This is a message'
+            title: 'Hello Customer',
+            message: 'This is just a test'
         });
     }
 
