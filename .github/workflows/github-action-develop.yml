@@ -25,4 +25,5 @@ jobs:
       - run: npm install -g --acceptSuiteCloudSDKLicense @oracle/suitecloud-cli
       - run: npm install --save-dev @oracle/suitecloud-unit-testing jest
       - run: suitecloud account:savetoken --account TSTDRV2453781 --authid DEV-CLI --tokenid a7b366190abf712ed9aae0e6c4f97f434deb251d651905a1a80af6888ff82b9a --tokensecret 855f7ebb27dfb61f383fca04bbc6b49addd2e8dc789ef2b49c7de70a9a29200b --url tstdrv2453781.app.netsuite.com
+      - run: suitecloud project:adddependencies
       - run: suitecloud project:deploy
