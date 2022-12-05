@@ -20,8 +20,8 @@ function(dialog) {
      */
     function pageInit(scriptContext) {
         dialog.alert({
-            title: 'Hello Customer',
-            message: 'The last test for githubaction'
+            title: 'Mode' + scriptContext.mode,
+            message: 'This is a test'
         });
     }
 
