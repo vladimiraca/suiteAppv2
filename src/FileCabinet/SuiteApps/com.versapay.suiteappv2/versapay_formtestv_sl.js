@@ -15,7 +15,7 @@ define([],
          * @since 2015.2
          */
         const onRequest = (scriptContext) => {
-            log.debug('TEST', 'TEST');
+
         }
 
         return {onRequest}
