@@ -13,7 +13,14 @@ define([],
          * @since 2015.2
          */
         const execute = (scriptContext) => {
-
+            switch(scriptContext.type) {
+                case scriptContext.InvocationType.ON_DEMAND:
+                    break;
+                case scriptContext.InvocationType.SCHEDULED:
+                    break;
+                case scriptContext.InvocationType.ABORTED:
+                    break;
+            }
         }
 
         return {execute}
